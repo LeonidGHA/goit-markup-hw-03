@@ -31,8 +31,8 @@ h5,
 h6,
 p,
 ul {
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .list {
@@ -105,6 +105,7 @@ ul {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
 }
 
 .site-nav .link:hover,
@@ -179,7 +180,21 @@ ul {
 }
 /* Услуги */
 
-/* team */
+/* Наша Команда */
+
+.team-card {
+    display: inline-block;
+    max-width: 370px;
+    max-height: auto;
+    margin-bottom: 0px;
+    outline: 4px solid blueviolet;
+}
+
+.team-card.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .team {
     background-color: var(--tertiary-bck-color);
@@ -191,12 +206,16 @@ ul {
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
+
+    margin: 30px 0 10px;
 }
 
 .team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+
+    margin-bottom: 30px;
 }
 
 /* footer */
@@ -209,31 +228,53 @@ ul {
 
 .footer .logo {
     color: var(--primary-bcg-color);
+
+    display: inline-block;
+    margin-top: 60px;
+    margin-bottom: 20px;
 }
 
-.adress {
+.adress.list{
     font-style: normal;
+    display: inline-block;
+    
+    margin-bottom: 60px;
+    /* outline: 4px solid blueviolet; */
 }
 
 .street {
     color:var(--primary-bcg-color);
     line-height: 1.71;
-}
-
-.street.link:hover,
-.street.link:focus {
-    color: var(--accent-color);
+    margin-left: 0;
 }
 
 .adress .contact {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     line-height: 1.71;
+
+    margin-top: 9px;
 }
 
 /* Main portfolio.html */
 
 /* Filters */
+.filters-title {
+    color: var(--title-tex-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    display: none;
+}
+
+.filters .list {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
 .filters .link {
     color: var(--title-tex-color);
@@ -242,6 +283,8 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+
+    /* outline: 4px solid blueviolet; */
 } 
 
 .filters .link {
@@ -261,14 +304,23 @@ ul {
 
 
 /* Projects */
-.filters-title {
-    color: var(--title-tex-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+.project.list {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.project-card {
+    display: inline-block;
+    max-width: 370px;
+    max-height: auto;
+    margin-bottom: 0px;
+    /* outline: 4px solid blueviolet; */
+}
+
+.project-card.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .project-title {
@@ -276,10 +328,14 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin: 20px 24px 4px;
 }
 
 .project-text {
     font-size: 16px;
     line-height: 1.88;
+
+    margin: 0 24px 20px;
 }
 
