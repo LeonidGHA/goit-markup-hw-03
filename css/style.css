@@ -67,13 +67,18 @@ ul {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 4px solid indigo;
+    /* outline: 4px solid indigo; */
 }
 
 /* header */
+.header-main {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-nav {
     display: flex;
     align-items: center;
+
 }
 
 /* Logo */
@@ -109,8 +114,7 @@ ul {
     margin-right: 50px;
 }
 
-.site-nav .link,
-.site-cont .link {
+.site-nav .link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -160,7 +164,10 @@ ul {
 
 .hero {
     background-color: var(--secondary-bcg-color);
-}
+    align-items: center;
+    text-align: center;
+    }
+
 .hero-title {
     color: var(--primary-bcg-color);
 
@@ -170,7 +177,6 @@ ul {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 } 
@@ -178,9 +184,6 @@ ul {
 /* Button */
 
 .button-studio {
-    display: flex;
-    align-items: center;
-    text-align: center;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 
@@ -313,7 +316,7 @@ ul {
     margin-bottom: 20px;
 }
 
-.adress.list{
+.adress-list.list{
     font-style: normal;
     display: inline-block;
     
@@ -327,7 +330,7 @@ ul {
     margin-left: 0;
 }
 
-.adress .contact {
+.adress-list .contact {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     line-height: 1.71;
@@ -352,12 +355,15 @@ ul {
 
 .filters-list {
     margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    text-align: center;
 }
 
 .filters-list .item {
     margin-right: 8px;
+    display: inline-block;
 }
 
 .filters-list .item:last-child {
@@ -373,13 +379,9 @@ ul {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-
+    cursor: pointer;
     /* outline: 4px solid blueviolet; */
 } 
-
-.filters-list .link {
-    cursor: pointer;
-}
 
 .filters-list .link:hover,
 .filters-list .link:focus {
@@ -417,14 +419,15 @@ ul {
     max-width: 370px;
     max-height: auto;
     margin-bottom: 0px;
-    border-bottom: 1px solid #EEEEEE;
     /* outline: 4px solid blueviolet; */
 }
 
-.project-card.img {
+.project-card .card-image {
     display: block;
     max-width: 100%;
     height: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .project-title {
@@ -433,13 +436,18 @@ ul {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin: 20px 24px 4px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    padding: 20px 24px 4px;
 }
 
 .project-text {
     font-size: 16px;
     line-height: 1.88;
 
-    margin: 0 24px 20px;
+    padding: 0 24px 20px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
