@@ -23,6 +23,7 @@ body {
     letter-spacing: 0.03em;
 }
 
+/* Утилиты */
 h1,
 h2,
 h3,
@@ -70,16 +71,16 @@ ul {
 }
 
 /* header */
-
-.container.header-nav {
+.header-nav {
     display: flex;
     align-items: center;
 }
+
 /* Logo */
 
 .logo {
-    color:  var(--logo-text-color);
-    font-family: Raleway, cursive;
+    color: var(--logo-text-color);
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
@@ -87,37 +88,37 @@ ul {
 
 .logo .accent {
     color: var(--accent-color);
-    font-family: Raleway, cursive;
+    font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
 }
 
 /* Navigation */
-.header-nav {
+.nav-list {
     display: flex;
+    align-items: center;
 }
 
 .site-nav {
     display: flex;
-   
+    margin-left: 93px;
 }
 
-.site-nav .item {
+.site-nav .item:not(:last-child) {
     margin-right: 50px;
-}
-
-.site-nav .item:last-child {
-    margin-right: 0;
 }
 
 .site-nav .link,
 .site-cont .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--logo-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
 }
 
 .site-nav .link:hover,
@@ -133,17 +134,15 @@ ul {
 
 .contact-header {
     display: flex;
+    margin-left: auto;
 }
 
-.contact-header .item {
+.contact-header .item:not(:last-child) {
     margin-right: 50px;
 }
 
-.contact-header .item:last-child {
-    margin-right: 0;
-}
-
-.contact {
+.contact.link {
+    display: block;
     color: var(--primary-text-color);
     font-weight: 500;
     line-height: 1.14;
