@@ -18,7 +18,7 @@
 <body>
 
     <!-- Верхняя линия -->
-    <header>
+    <header class="header-main">
         <div class="container header-nav">
             <nav class="nav-list">
                 <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
@@ -52,7 +52,7 @@
         <!-- Шапка -->
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="button-studio item">Заказать услугу</button>
+            <button type="button" class="button-studio">Заказать услугу</button>
         </section>
 
         <!-- Преимущества -->
@@ -60,19 +60,19 @@
             <div class="container">
                 <h2 class="section-title">Преимущества</h2>
                 <ul class="advantage-list list">
-                    <li class="item">
+                    <li class="advantage-item">
                         <h3 class="subtitle">Внимание к деталям</h3>
                         <p class="text">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                     </li>
-                    <li class="item">
+                    <li class="advantage-item">
                         <h3 class="subtitle">Пунктуальность</h3>
                         <p class="text">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                     </li>
-                    <li class="item">
+                    <li class="advantage-item">
                         <h3 class="subtitle">Планирование</h3>
                         <p class="text">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                     </li>
-                    <li class="item">
+                    <li class="advantage-item">
                         <h3 class="subtitle">Современные технологии</h3>
                         <p class="text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
@@ -103,29 +103,30 @@
             <div class="container">
                 <h2 class="section-title">Наша команда</h2>
                 <ul class="team-list list">
-                    <li class="item">
-                        <div class="team-card"><img src="./images/photo1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
+                    <li class="team-card">
+                        <img class="team-photo" src="./images/photo1.jpg" alt="Фото Игоря Демьяненко" width="270" height="260">
+                        <div class="team-description">
                             <h3 class="team-title">Игорь Демьяненко</h3>
                             <p class="team-text">Product Designer</p>
                         </div>
                     </li>
-                    <li class="item">
-                        <div class="team-card">
-                            <img src="./images/photo2.jpg" alt="Фото Ольги Репиной" width="270" height="260">
+                    <li class="team-card">
+                        <img class="team-photo" src="./images/photo2.jpg" alt="Фото Ольги Репиной" width="270" height="260">
+                        <div class="team-description">
                             <h3 class="team-title">Ольга Репина</h3>
                             <p class="team-text">Frontend Developer</p>
                         </div>
                     </li>
-                    <li class="item">
-                        <div class="team-card">
-                            <img src="./images/photo3.jpg" alt="Фото Николая Тарасова" width="270" height="260">
+                    <li class="team-card">
+                        <img class="team-photo" src="./images/photo3.jpg" alt="Фото Николая Тарасова" width="270" height="260">
+                        <div class="team-description">
                             <h3 class="team-title">Николай Тарасов</h3>
                             <p class="team-text">Marketing</p>
                         </div>
                     </li>
-                    <li class="item">
-                        <div class="team-card">
-                            <img src="./images/photo4.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
+                    <li class="team-card">
+                        <img class="team-photo" src="./images/photo4.jpg" alt="Фото Михаила Ермакова" width="270" height="260">
+                        <div class="team-description">                            
                             <h3 class="team-title">Михаил Ермаков</h3>
                             <p class="team-text">UI Designer</p>
                         </div>
@@ -138,22 +139,20 @@
     <!-- footer -->
     <footer class="footer">
         <div class="container footer-thumb">
-            <div class="adress-thumb">
-                <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
-                <address>
-                    <ul class="adress-list list">
-                        <li>
-                            <a href="" class="street link">г. Киев, пр-т Леси Украинки, 26</a>
-                        </li>
-                        <li>
-                            <a href="mailto:info@example.com" class="contact link">info@example.com</a>
-                        </li>
-                        <li>
-                            <a href="tel:+380991111111" class="contact link">+38 099 111 11 11</a>
-                        </li>
-                    </ul>
-                </address>
-            </div>
+            <a href="./index.html" class="logo link"><span class="accent">Web</span>Studio</a>
+            <address>
+                <ul class="adress-list list">
+                    <li class="adress-item">
+                        <a href="" class="street link">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="adress-item">
+                        <a href="mailto:info@example.com" class="contact link">info@example.com</a>
+                    </li>
+                    <li class="adress-item">
+                        <a href="tel:+380991111111" class="contact link">+38 099 111 11 11</a>
+                    </li>
+                </ul>
+            </address>
         </div>
     </footer>
 
