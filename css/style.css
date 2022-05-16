@@ -308,24 +308,34 @@ ul {
     background-color: var(--secondary-bcg-color);
 }
 
+.footer-thumb {
+    display: flex;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.adress-thumb {
+    display: block;
+    margin-right: auto;
+}
+
 .footer .logo {
     color: var(--primary-bcg-color);
 
     display: inline-block;
-    margin-top: 60px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
-.adress-list.list{
+.adress-list.list {
     font-style: normal;
     display: inline-block;
-    
-    margin-bottom: 60px;
+
     /* outline: 4px solid blueviolet; */
 }
 
 .street {
-    color:var(--primary-bcg-color);
+    color: var(--primary-bcg-color);
     line-height: 1.71;
     margin-left: 0;
 }
