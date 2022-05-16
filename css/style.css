@@ -242,11 +242,11 @@ ul {
     display: flex;
 }
 
-.service-list .item {
+.service-item {
     margin-right: 30px;
 }
 
-.service-list .item:last-child {
+.service-item:last-child {
     margin-right: 0;
 }
 
