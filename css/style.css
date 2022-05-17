@@ -43,6 +43,20 @@ ul {
     text-decoration: none;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -163,6 +177,8 @@ ul {
 /* Шапка */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: var(--secondary-bcg-color);
     align-items: center;
     text-align: center;
@@ -171,6 +187,7 @@ ul {
 .hero-title {
     max-width: 696px;
     margin: auto;
+    margin-bottom: 30px;
 
     color: var(--primary-bcg-color);
     font-weight: 900;
@@ -205,12 +222,7 @@ ul {
 /* Преимущества */
 .section.advantage {
     padding-bottom: 0;
-}
-
-.section.advantage .section-title {
-    visibility: hidden;
-}
-    
+}   
 
 .advantage-list {
     display: flex;
@@ -240,6 +252,12 @@ ul {
 
 .service-list {
     display: flex;
+}
+
+.service-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .service-item {
@@ -351,8 +369,6 @@ ul {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
-    visibility: hidden;
 }
 
 .filters-list {
